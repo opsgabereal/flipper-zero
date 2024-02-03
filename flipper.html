@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image and Download Button</title>
+</head>
+<body>
+
+    <!-- Image 1 -->
+    <img src="https://flipperzero.one/img/tild3531-6333-4166-a336-633531386533__inhand_new.png" alt="Image 1" style="position: absolute; top: 0; left: 0;">
+
+    <!-- Image 2 -->
+    <img src="https://flipperzero.one/img/tild3135-3238-4638-a336-663164393931__front_new.png" alt="Image 2" style="position: absolute; top: 50px; left: 0;">
+
+    <!-- Download Button -->
+    <button onclick="downloadImage()">Download Image</button>
+
+    <script>
+        function downloadImage() {
+            // You can replace 'image1.png' and 'image2.png' with appropriate names for the downloaded files
+            var link = document.createElement('a');
+            link.href = 'https://flipperzero.one/img/tild3531-6333-4166-a336-633531386533__inhand_new.png';
+            link.download = 'image1.png';
+            link.click();
+
+            link.href = 'https://flipperzero.one/img/tild3135-3238-4638-a336-663164393931__front_new.png';
+            link.download = 'image2.png';
+            link.click();
+        }
+    </script>
+
+</body>
+</html>
